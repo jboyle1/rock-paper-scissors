@@ -50,6 +50,14 @@ const determineWinner = (userChoice, computerChoice) => {
             return 'Congratulations, you won!';
         }
     }
+// 008 - Next, write yet another if statement for if the userChoice is 'scissors'. Inside of this if statement, the computerChoice must either be 'rock' or 'paper'. Write logic that will return a winner.
+    if (userChoice === 'scissors') {
+        if (computerChoice === 'rock') {
+            return 'Sorry, computer won!';
+        } else {
+            return 'Congratulations, you won!';
+        }
+    }
 };
 
 
