@@ -61,7 +61,16 @@ const determineWinner = (userChoice, computerChoice) => {
 };
 
 // 009 - Test in console
-console.log(determineWinner('rock', 'scissors'));
-console.log(determineWinner('paper', 'scissors'));
-console.log(determineWinner('rock', 'rock'));
+// console.log(determineWinner('rock', 'scissors'));
+// console.log(determineWinner('paper', 'scissors'));
+// console.log(determineWinner('rock', 'rock'));
+
+// Function to play the game
+
+// 010 - Create a function named playGame. Inside the playGame() function, create a variable named userChoice set equal to the result of calling getUserChoice(), passing in either 'rock', 'paper', or 'scissors' as an argument. Create another variable named computerChoice, and set it equal to the result of calling getComputerChoice().
+const playGame = () => {
+    const userChoice = getUserChoice('paper');
+    const computerChoice = getComputerChoice();
+    return `You thew ${userChoice} and the computer threw ${computerChoice}`;
+};
 
