@@ -5,7 +5,7 @@ const getUserChoice = (userInput) => {
 // 002 - Since a user can pass in a parameter, such as ‘Rock’ or ‘rock’ with different capitalizations, begin by utilizing JavaScript’s toLowerCase() function to make the userInput all lowercase.
 userInput = userInput.toLowerCase();
 // 003 - Inside getUserChoice(), write an if/else statement that makes sure the userInput is either 'rock', 'paper', or 'scissors'. If it does, then return the userInput. If not, use console.log to print an error message to the console.
-if (userInput === 'rock' || userInput ==='scissors' || userInput === 'paper') {
+if (userInput === 'rock' || userInput ==='scissors' || userInput === 'paper' || userInput === 'bomb') {
     return userInput;
 } else {
     consol.log("error! Please enter either 'rock', 'paper or 'scissors'.");
@@ -58,6 +58,9 @@ const determineWinner = (userChoice, computerChoice) => {
             return 'Congratulations, you won!';
         }
     }
+    if (userChoice === 'bomb') {
+        return 'Congratulations, you won!';
+    }
 };
 
 // 009 - Test in console
@@ -69,14 +72,14 @@ const determineWinner = (userChoice, computerChoice) => {
 
 // 010 - Create a function named playGame. Inside the playGame() function, create a variable named userChoice set equal to the result of calling getUserChoice(), passing in either 'rock', 'paper', or 'scissors' as an argument. Create another variable named computerChoice, and set it equal to the result of calling getComputerChoice().
 const playGame = () => {
-    const userChoice = getUserChoice('paper');
+    const userChoice = getUserChoice('bomb');
     const computerChoice = getComputerChoice();
     console.log(`You thew ${userChoice} and the computer threw ${computerChoice}`);
     console.log(determineWinner(userChoice, computerChoice));
 
 };
 
-// 011 - Call playGame function
+// 011 - Call playGame function.
 playGame()
 
 
