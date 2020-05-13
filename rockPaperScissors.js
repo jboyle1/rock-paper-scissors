@@ -27,9 +27,23 @@ const getComputerChoice = () => {
     }
 };
 
+// Determine a winner function
+
 // 005 - Create a function named determineWinner that takes two parameters named userChoice and computerChoice. This function will compare the two choices played and then return if the human player won, lost, or tied. Let’s deal with the tie condition first. Within the determineWinner() function, write an if statement that checks if the userChoice parameter equals the computerChoice parameter. If so, return a string that the game was a tie.
-const determineWinner = (userChoise, computerChoice) => {
-    if (userChoise === computerChoice) {
+const determineWinner = (userChoice, computerChoice) => {
+    if (userChoice === computerChoice) {
         return 'This game is a tie!';
     }
-}
+// 006 - Begin by writing an if statement that checks if the userChoice is 'rock'. Inside the if statement’s block, write another if/else statement. The inner if/else should check if the computerChoice is 'paper'. If so, return a message that the computer won. If not, return a message that the user won.
+    if (userChoice === 'rock') {
+        if (computerChoise === 'paper') {
+            return 'Sorry, computer won!';
+        } else {
+            return 'Congratulations, you won!';
+        }
+    }
+
+    
+};
+
+
