@@ -36,7 +36,7 @@ const determineWinner = (userChoice, computerChoice) => {
     }
 // 006 - Begin by writing an if statement that checks if the userChoice is 'rock'. Inside the if statement’s block, write another if/else statement. The inner if/else should check if the computerChoice is 'paper'. If so, return a message that the computer won. If not, return a message that the user won.
     if (userChoice === 'rock') {
-        if (computerChoise === 'paper') {
+        if (computerChoice === 'paper') {
             return 'Sorry, computer won!';
         } else {
             return 'Congratulations, you won!';
@@ -60,4 +60,8 @@ const determineWinner = (userChoice, computerChoice) => {
     }
 };
 
+// 009 - Test in console
+console.log(determineWinner('rock', 'scissors'));
+console.log(determineWinner('paper', 'scissors'));
+console.log(determineWinner('rock', 'rock'));
 
