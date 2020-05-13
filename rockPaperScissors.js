@@ -71,6 +71,12 @@ const determineWinner = (userChoice, computerChoice) => {
 const playGame = () => {
     const userChoice = getUserChoice('paper');
     const computerChoice = getComputerChoice();
-    return `You thew ${userChoice} and the computer threw ${computerChoice}`;
+    console.log(`You thew ${userChoice} and the computer threw ${computerChoice}`);
+    console.log(determineWinner(userChoice, computerChoice));
+
 };
+
+// 011 - Call playGame function
+playGame()
+
 
